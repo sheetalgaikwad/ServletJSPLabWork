@@ -16,7 +16,7 @@
         username:<input type="text" name="username">
     </p>
     <p>
-        password:<input type="text" name="password">
+        password:<input type="password" name="password">
     </p>
     <P>
         <input type="submit" value="login">
