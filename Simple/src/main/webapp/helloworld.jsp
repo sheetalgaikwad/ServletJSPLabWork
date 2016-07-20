@@ -11,11 +11,7 @@
     <title>Hello World</title>
 </head>
 <body>
-<% String message=(String)request.getAttribute("message");
-    if(message==null){
-        message="";
-    }
-    %>
-<h2><%=message%></h2>
+
+<h2>${message}</h2>
 </body>
 </html>
