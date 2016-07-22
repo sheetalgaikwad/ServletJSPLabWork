@@ -1,2 +1,5 @@
+com\mantiso\model\Product.class
+com\mantiso\ApplicationSettings.class
 com\mantiso\SimpleServlet.class
 com\mantiso\HelloWorldServlet.class
+com\mantiso\DataListingServlet.class

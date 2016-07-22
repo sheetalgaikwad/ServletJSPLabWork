@@ -15,6 +15,10 @@
         <servlet-name>SimpleServlet</servlet-name>
         <servlet-class>com.mantiso.SimpleServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>DataListingServlet</servlet-name>
+        <servlet-class>com.mantiso.DataListingServlet</servlet-class>
+    </servlet>
 
 
     <servlet-mapping>
@@ -24,6 +28,10 @@
     <servlet-mapping>
         <servlet-name>SimpleServlet</servlet-name>
         <url-pattern>/home</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DataListingServlet</servlet-name>
+        <url-pattern>/data</url-pattern>
     </servlet-mapping>
 
 

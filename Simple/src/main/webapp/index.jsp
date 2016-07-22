@@ -12,16 +12,16 @@
 </head>
 <body>
 <form action="home" method="post">
-    <p>
-        username:<input type="text" name="username">
-    </p>
-    <p>
-        password:<input type="password" name="password">
-    </p>
-    <P>
-        <input type="submit" value="login">
-    </P>
-
+    <table border="1" align="center">
+    <tr>
+        <td>username</td>
+        <td><input type="text" name="username"></td>
+    </tr>
+        <tr>
+            <td>password</td>
+            <td><input type="password" name="password"></td>
+        </tr>
+    </table>
 </form>
 
 </body>

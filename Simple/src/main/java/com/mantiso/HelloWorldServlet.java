@@ -33,7 +33,7 @@ public class HelloWorldServlet extends HttpServlet {
         LocalDate date = LocalDate.now();
         DayOfWeek dow = date.getDayOfWeek();
         String message="Welcome, today is "+ dow+"!";
-        RequestDispatcher dispatcher=getServletContext().getRequestDispatcher("/helloworld.jsp");
+        RequestDispatcher dispatcher=getServletContext().getRequestDispatcher("/WEB-INF/helloworld.jsp");
         req.setAttribute("message",message);
         dispatcher.forward(req,resp);
     }

@@ -60,7 +60,7 @@ public class SimpleServlet extends HttpServlet {
         if(username!=null && username.equals(actualUserName) && password!=null && password.equals(actualPassword)){
             resp.getWriter().printf("Welcome %s",username);
         }else{
-            resp.sendRedirect("badlogin.html");
+            resp.sendRedirect("/WEB-INF/badlogin.html");
         }
     }
 }
