@@ -18,8 +18,6 @@ import java.util.List;
  */
 public class DataListingServlet extends HttpServlet {
 
-    List<Product> li;
-
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
@@ -31,8 +29,7 @@ public class DataListingServlet extends HttpServlet {
         applicationSettings.setTitle(title);
 
         RequestDispatcher dispatcher=getServletContext().getRequestDispatcher("/WEB-INF/datalist.jsp");
-        req.setAttribute("data",applicationSettings.getProducts());
-        req.setAttribute("title",applicationSettings.getTitle());
+        req.setAttribute("data",applicationSettings);
         dispatcher.forward(req,resp);
     }
 
@@ -73,7 +70,7 @@ public class DataListingServlet extends HttpServlet {
 
         Product p4=new Product();
         p4.setName("logitech keyboard");
-        p4.setDesc("Balck, wireless");
+        p4.setDesc("Black, wireless");
         p4.setPrice(49);
         p4.setQuantity(50);
         list.add(p4);

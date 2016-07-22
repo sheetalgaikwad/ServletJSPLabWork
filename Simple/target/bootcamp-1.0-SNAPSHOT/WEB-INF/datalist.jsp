@@ -15,11 +15,11 @@
     <div class="col-md-9">
         <table border="1" align="center">
             <tr>
-                <c:forEach var="title" items="${title}">
+                <c:forEach var="title" items="${data.title}">
                     <td><b>${title}</b></td>
                 </c:forEach>
             </tr>
-            <c:forEach var="prod" items="${data}">
+            <c:forEach var="prod" items="${data.products}">
                 <tr>
                     <td>${prod.name}</td>
                     <td>${prod.desc}</td>

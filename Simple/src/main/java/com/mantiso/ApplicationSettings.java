@@ -10,18 +10,8 @@ import java.util.List;
  */
 public class ApplicationSettings {
 
-    private String[] _tabNames;
     private List<Product> _products;
     private List<String> _title;
-
-    public String[] getTabNames() {
-        return _tabNames;
-    }
-
-    public void setTabNames(String[] names) {
-        _tabNames=new String[names.length];
-        System.arraycopy(names, 0, _tabNames, 0, names.length);
-    }
 
     public List<Product> getProducts() {
         return _products;
